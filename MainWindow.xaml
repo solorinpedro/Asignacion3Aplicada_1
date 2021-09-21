@@ -1,0 +1,46 @@
+﻿<Window x:Class="Asignacion3Aplicada1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Asignacion3Aplicada1"
+        mc:Ignorable="d"
+        Title="Menu Principal" Height="350" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="151*"/>
+            <ColumnDefinition Width="113*"/>
+            <ColumnDefinition Width="26*"/>
+            <ColumnDefinition Width="110*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" OpacityMask="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}" Background="{DynamicResource {x:Static SystemColors.ControlLightLightBrushKey}}" Grid.ColumnSpan="4">
+            <Menu Height="18" Background="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}">
+               
+                <MenuItem Name="Capitulo6" Header ="Capitulo 6" Background="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}">
+                    <MenuItem Name="AplicacionJagged" Header="Aplicacionjagged" Click="AplicacionJagged_Click">
+
+                    </MenuItem>
+                    <MenuItem Name="EjercicioEscuela" Header="Escuela" Click="EjercicioEscuela_Click">
+                        
+                    </MenuItem>
+                    <MenuItem Name="Arreglo_como_Parametro" Header="Ejercicio5" Click= "Arreglo_como_Parametro_Click">
+                        
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="Capitulo 7">
+                    <MenuItem x:Name="Ejerciocio1" Header="Ejercicio 1" Click="Ejerciocio1_Click">
+                        
+                    </MenuItem>
+                    <MenuItem x:Name="HashTable" Header="HastTable" Click="HashTable_Click">
+                        
+                    </MenuItem>
+                    <MenuItem x:Name="AgendaTelefonica" Header="Agenda" Click="AgendaTelefonica_Click">
+                        
+                    </MenuItem>
+                </MenuItem>
+
+            </Menu>
+
+        </StackPanel>
+    </Grid>
+</Window>

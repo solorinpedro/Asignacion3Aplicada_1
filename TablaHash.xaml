@@ -1,0 +1,25 @@
+﻿<Window x:Class="Asignacion3Aplicada_1.TablaHash"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Asignacion3Aplicada_1"
+        mc:Ignorable="d"
+        Title="TablaHash" Height="250" Width="500">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Palabra:"/>
+                <TextBox x:Name="PalabraTextBox" Height="20" Width="120"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical">
+                <Label Content="Definifion" Margin="0,15"/>
+                <TextBox x:Name="DefinicionTextBox" Height= "50" Margin="0,0" IsEnabled="False"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="AddWord" Content="Agregar" Height="25" Width="70" Margin="0,15" Click="AddWord_Click"/>
+                <Button x:Name="Valor" Content="Ver Defifinicion" Height="25" Margin="15,0" Click="Valor_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

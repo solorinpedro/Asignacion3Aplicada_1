@@ -1,0 +1,38 @@
+﻿<Window x:Class="Asignacion3Aplicada_1.ArregloJagged"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Asignacion3Aplicada_1"
+        mc:Ignorable="d"
+        Title="Arreglo Jagged" Height="250" Width="450" Background="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}">
+    <Grid>
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Cantidad de alumnos"/>
+                <TextBox x:Name ="CantidadAlumnosTextBox" Height="20" Width="70"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Calificaciones"/>
+                <TextBox x:Name="CalificacionesTextbox" Height= "20" Width="70" Margin="41,0"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Promedio"/>
+                <TextBox x:Name = "PromedioTextbox" Height="20" Width="70" Margin="61,0" IsEnabled="False"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Calificacion Menor"/>
+                <TextBox x:Name="CalificacionMenorTextBox" Height="20" Width="70" Margin="14,0" IsEnabled="False"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Calificacion Mayor"/>
+                <TextBox x:Name="CalificacionMayorTextBOx" Height="20" Width="70" Margin="16,0" IsEnabled="False"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="ButtonCalcular" Content="Calcular" Width="70" Height="20" Margin="10,30" Click="ButtonCalcular_Click"/>
+                <Button x:Name="AgregarButton" Content="Agregar" Height="20" Width="70" Click="AgregarButton_Click"/>
+            </StackPanel>
+           
+        </StackPanel>
+    </Grid>
+</Window>
